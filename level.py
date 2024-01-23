@@ -6,13 +6,14 @@ from particles import ParticleEffect
 from support import import_csv_layout, import_cut_graphic
 from enemy import Enemy
 from decoration import Sky, Water, Clouds
+from menu_data import *
 
 
 class Level:
     def __init__(self, level_data, surface):
         #level setup
         self.display_surface = surface
-        #self.level_data = level_data
+        self.current_level = level_data
         
         #player
         player_layout = import_csv_layout(level_data['player'])

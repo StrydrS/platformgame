@@ -31,15 +31,15 @@ class Overworld:
         self.display_surface = surface
         self.max_level = max_level
         self.current_level = start_level
+        
+        #movement logic
+        self.moving = False
+        self.move_direction = pygame.math.Vector2(0,0)
         self.speed = 8
         
         #sprites 
         self.setup_nodes()
         self.setup_icon()
-        
-        #movement logic
-        self.move_direction = pygame.math.Vector2(0,0)
-        self.moving = False
         
     def setup_nodes(self):
         self.nodes = pygame.sprite.Group()
@@ -47,7 +47,7 @@ class Overworld:
         for index, node_data in enumerate(levels.values()):
             if index <= self.max_level:
                 node_sprite = Node(tuple(node_data['node_pos']), 'available', self.speed)
-            elif index > self.max_level:
+            else:
                 node_sprite = Node(tuple(node_data['node_pos']),'locked', self.speed)
             self.nodes.add(node_sprite)
             
