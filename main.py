@@ -13,6 +13,7 @@ class Game:
         self.max_health = 100
         self.current_health = 100
         self.coins = 0
+        self.max_coins = 0
         
         #audio
         self.level_bg_music = pygame.mixer.Sound('audio/level_music.wav')
@@ -22,7 +23,7 @@ class Game:
         
         
         #overworld creation
-        self.overworld = Overworld(0, self.max_level, screen, self.create_level)
+        self.overworld = Overworld(0, self.max_level, screen, self.create_level, self.max_coins)
         self.gamestate = 'overworld'
         self.overworld_bg_music.play(loops = -1)
         
@@ -32,21 +33,22 @@ class Game:
       
         
     def create_level(self, current_level):
+        self.overworld_bg_music.stop()
         self.level = Level(current_level, screen, self.create_overworld, self.change_coins, self.change_health)
         self.gamestate = 'level'
-        self.overworld_bg_music.stop()
         self.level_bg_music.play(loops = -1)
         
     def create_overworld(self, current_level, new_max_level):
         if new_max_level > self.max_level:
             self.max_level = new_max_level
         self.level_bg_music.stop()    
-        self.overworld = Overworld(current_level, self.max_level, screen, self.create_level)
+        self.overworld = Overworld(current_level, self.max_level, screen, self.create_level, self.max_coins)
         self.gamestate = 'overworld'
         self.overworld_bg_music.play(loops = -1)
 
     def change_coins(self, amount):
         self.coins += amount
+        self.max_coins = self.coins
     
     def change_health(self, amount):
         self.current_health += amount
@@ -56,9 +58,9 @@ class Game:
             self.current_health = 100
             self.coins = 0
             self.max_level = 0
-            
-            self.overworld = Overworld(0, self.max_level, screen, self.create_level)
+            self.overworld = Overworld(0, self.max_level, screen, self.create_level, self.max_coins)
             self.gamestate = 'overworld'
+            self.max_coins = 0
             
     def run(self): 
         if self.gamestate == 'overworld':

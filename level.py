@@ -16,6 +16,7 @@ class Level:
         self.current_level = current_level
         level_data = levels[current_level]
         self.new_max_level = level_data['unlock']
+        self.change_health = change_health
         
         #audio 
         self.coin_sound = pygame.mixer.Sound('audio/effects/coin.wav')
@@ -159,6 +160,7 @@ class Level:
     
     def check_death(self):
         if self.player.sprite.rect.top > HEIGHT:
+            self.change_health(-100)
             self.create_overworld(self.current_level, 0)
             
     def check_win(self): 

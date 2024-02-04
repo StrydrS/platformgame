@@ -46,7 +46,7 @@ class Icon(pygame.sprite.Sprite):
         self.rect.center = self.pos
        
 class Overworld:
-    def __init__(self, start_level, max_level, surface, create_level): 
+    def __init__(self, start_level, max_level, surface, create_level, max_coins): 
         
         #setup
         self.display_surface = surface
@@ -54,6 +54,13 @@ class Overworld:
         self.current_level = start_level
         
         self.create_level = create_level
+        
+        self.max_coins = max_coins 
+        
+        #coin ui
+        self.coin = pygame.image.load('graphics/ui/coin.png').convert_alpha()
+        self.coin_rect = self.coin.get_rect(topleft = (950,61))
+        self.font = pygame.font.Font('graphics/ui/ARCADEPI.TTF', 30)
         
         #movement logic
         self.moving = False
@@ -80,6 +87,12 @@ class Overworld:
                 node_sprite = Node(tuple(node_data['node_pos']),'locked', self.speed,node_data['node_graphics'])
             self.nodes.add(node_sprite)
             
+            
+    def show_coins(self,amount):
+        self.display_surface.blit(self.coin, self.coin_rect)
+        self.coin_num = self.font.render(str(amount) + " collected.", False, '#33323d')
+        self.coin_num_rect = self.coin_num.get_rect(midleft = (self.coin_rect.right + 4, self.coin_rect.centery))
+        self.display_surface.blit(self.coin_num, self.coin_num_rect)
     
     def setup_icon(self):
         self.icon = pygame.sprite.GroupSingle()
@@ -138,9 +151,11 @@ class Overworld:
         self.icon.update()
         self.nodes.update()
         
+        
         self.sky.draw(self.display_surface)
         self.draw_paths()
         self.icon.update()
         self.nodes.draw(self.display_surface)
         self.icon.draw(self.display_surface)
+        self.show_coins(self.max_coins)
     
