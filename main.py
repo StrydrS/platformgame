@@ -34,6 +34,7 @@ class Game:
         
     def create_level(self, current_level):
         self.overworld_bg_music.stop()
+        self.level_bg_music.stop()
         self.level = Level(current_level, screen, self.create_overworld, self.change_coins, self.change_health)
         self.gamestate = 'level'
         self.level_bg_music.play(loops = -1)
