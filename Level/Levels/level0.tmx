@@ -3,13 +3,13 @@
  <editorsettings>
   <export target="level0.csv" format="csv"/>
  </editorsettings>
- <tileset firstgid="1" source="../New folder/terrain_tiles.tsx"/>
- <tileset firstgid="17" source="../New folder/coin_tiles.tsx"/>
- <tileset firstgid="19" source="../New folder/grass.tsx"/>
- <tileset firstgid="24" source="../New folder/palms.tsx"/>
- <tileset firstgid="27" source="../New folder/player_tiles.tsx"/>
- <tileset firstgid="29" source="../New folder/enemy_tile.tsx"/>
- <tileset firstgid="31" source="../New folder/crates.tsx"/>
+ <tileset firstgid="1" source="../Tilesets/terrain_tiles.tsx"/>
+ <tileset firstgid="17" source="../Tilesets/coin_tiles.tsx"/>
+ <tileset firstgid="19" source="../Tilesets/grass.tsx"/>
+ <tileset firstgid="24" source="../Tilesets/palms.tsx"/>
+ <tileset firstgid="27" source="../Tilesets/player_tiles.tsx"/>
+ <tileset firstgid="29" source="../Tilesets/enemy_tile.tsx"/>
+ <tileset firstgid="31" source="../Tilesets/crates.tsx"/>
  <layer id="1" name="terrain" width="60" height="11" locked="1">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -40,7 +40,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="3" name="grass" width="60" height="11" visible="0" locked="1">
+ <layer id="3" name="grass" width="60" height="11" locked="1">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,0,0,0,0,0,0,
@@ -100,7 +100,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="7" name="player" width="60" height="11" visible="0" locked="1">
+ <layer id="7" name="player" width="60" height="11" locked="1">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,

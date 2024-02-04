@@ -1,27 +1,101 @@
 {
-    "activeFile": "C:/Users/stryd/Desktop/mgame/Level/Levels/level0.tmx",
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "C:/Users/stryd/Desktop/mgame/Level/Levels/terrain_tiles.tsx",
     "expandedProjectPaths": [
         "C:/Users/stryd/Desktop/mgame/Level/Levels"
     ],
+    "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/bg_palms.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/coin_tiles.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/crates.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/enemies.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
         "C:/Users/stryd/Desktop/mgame/Level/Levels/level0.tmx": {
             "scale": 0.33,
-            "selectedLayer": 8,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 724.2424242424242,
-                "y": 703.0303030303028
+                "x": 1451.5151515151515,
+                "y": 727.2727272727273
             }
         },
         "C:/Users/stryd/Desktop/mgame/Level/Levels/level1.tmx": {
             "scale": 0.33,
-            "selectedLayer": 4,
+            "selectedLayer": 8,
             "viewCenter": {
-                "x": 1818.181818181818,
-                "y": 557.5757575757577
+                "x": 1542.4242424242425,
+                "y": -136.3636363636365
             }
         },
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/level2.tmx": {
+            "scale": 0.38779296874999997,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 2050.0629564341475,
+                "y": 353.28128934777124
+            }
+        },
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/level3.tmx": {
+            "scale": 0.33,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 2003.030303030303,
+                "y": 287.87878787878776
+            }
+        },
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/level4.tmx": {
+            "scale": 0.38779296874999997,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 2051.3523042054894,
+                "y": 353.28128934777124
+            }
+        },
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/level5.tmx": {
+            "scale": 0.33,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 2162.1212121212125,
+                "y": 357.57575757575773
+            }
+        },
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/palms.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/player.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/terrain_tiles.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
         "C:/Users/stryd/Desktop/mgame/Level/New folder/coin_tiles.tsx": {
-            "scaleInDock": 1
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "C:/Users/stryd/Desktop/mgame/Level/New folder/crates.tsx": {
             "dynamicWrapping": true,
@@ -55,6 +129,14 @@
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
+        "C:/Users/stryd/Desktop/mgame/Level/Tilesets/crates.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1
+        },
+        "C:/Users/stryd/Desktop/mgame/Level/Tilesets/enemy_tile.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
         "C:/Users/stryd/Desktop/mgame/Level/Tilesets/grass.tsx": {
             "dynamicWrapping": false,
             "scaleInDock": 1,
@@ -65,6 +147,10 @@
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
+        "C:/Users/stryd/Desktop/mgame/Level/Tilesets/player_tiles.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
         "C:/Users/stryd/Desktop/mgame/Level/Tilesets/terrain_tiles.tsx": {
             "dynamicWrapping": false,
             "scaleInDock": 1,
@@ -73,29 +159,36 @@
     },
     "last.exportedFilePath": "C:/Users/stryd/Desktop/mgame/Level/Levels",
     "last.externalTilesetPath": "C:/Users/stryd/Desktop/mgame/Level/New folder",
-    "last.imagePath": "C:/Users/stryd/Desktop/mgame/graphics/terrain/palm_small",
+    "last.imagePath": "C:/Users/stryd/Desktop/mgame/graphics/terrain/palm_bg",
+    "map.height": 11,
     "map.lastUsedExportFilter": "CSV files (*.csv)",
     "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 64,
+    "map.tileWidth": 64,
+    "map.width": 64,
     "openFiles": [
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/terrain_tiles.tsx",
         "C:/Users/stryd/Desktop/mgame/Level/Levels/level1.tmx",
-        "C:/Users/stryd/Desktop/mgame/Level/New folder/crates.tsx",
-        "C:/Users/stryd/Desktop/mgame/Level/New folder/player_tiles.tsx",
-        "C:/Users/stryd/Desktop/mgame/Level/New folder/enemy_tile.tsx",
-        "C:/Users/stryd/Desktop/mgame/Level/New folder/palms.tsx",
-        "C:/Users/stryd/Desktop/mgame/Level/Levels/level0.tmx"
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/level0.tmx",
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/level3.tmx",
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/level2.tmx",
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/level4.tmx",
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/level5.tmx"
     ],
     "project": "untitled.tiled-project",
     "recentFiles": [
-        "C:/Users/stryd/Desktop/mgame/Level/Levels/level1.tmx",
-        "C:/Users/stryd/Desktop/mgame/Level/New folder/crates.tsx",
-        "C:/Users/stryd/Desktop/mgame/Level/New folder/player_tiles.tsx",
-        "C:/Users/stryd/Desktop/mgame/Level/New folder/enemy_tile.tsx",
-        "C:/Users/stryd/Desktop/mgame/Level/New folder/palms.tsx",
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/level5.tmx",
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/level4.tmx",
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/level2.tmx",
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/level3.tmx",
         "C:/Users/stryd/Desktop/mgame/Level/Levels/level0.tmx",
-        "C:/Users/stryd/Desktop/mgame/Level/Tilesets/terrain_tiles.tsx",
-        "C:/Users/stryd/Desktop/mgame/Level/Tilesets/coin_tiles.tsx",
-        "C:/Users/stryd/Desktop/mgame/Level/Tilesets/grass.tsx",
-        "C:/Users/stryd/Desktop/mgame/Level/Tilesets/palms.tsx"
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/level1.tmx",
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/terrain_tiles.tsx",
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/bg_palms.tsx",
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/palms.tsx",
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/crates.tsx",
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/player.tsx",
+        "C:/Users/stryd/Desktop/mgame/Level/Levels/enemies.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
